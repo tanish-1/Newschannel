@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>ub</title>
+        <link rel ="stylesheet" href="../css/register.css">
+        </head>
+        <body>
+            <h2 id ="h"> Register</h2>
+            <div class="loginbox">
+            <form method="POST" action ="../api/register store.php" id="f" enctype="multipart/form-data">
+      <input type ="text" placeholder="Enter the Name" id="fn" maxlength="10" name="name" required>
+     <br><br> <input type ="text" placeholder="email" name="email" required id="e">
+     <br><br><input type="tel" name="mobile" placeholder="Mobile No." id="mob"  required >
+     <br><br>  <input type ="password" placeholder="Password" id="p" required name="password">
+     <br><br> <input type ="password" placeholder="Confirm Password" id="cp" required name ="cpa">
+     <br><br>Upload image :<input type ="file" name="photo">
+     <br><br>Select your role : <select name="role">
+         <option value="1">Voter</option>
+         <option value="2">Group</option>
+     </select>
+     <br><br><input type ="submit" value="Register" id="b">
+    
+    </form>
+</div> 
+        </body>
+</html>
