@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>hi</title>
+       <link rel="stylesheet" href="css/news.css">
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+    </head>
+    <body>
+       
+            <img src="logo.jpg" id="logo">
+        <marquee direction ="right" >breaking news</marquee>
+        <div class="loginbox">
+        <img src="ava.jpg" class="avatar">
+    
+  <h2 id ="ho">Login </h2>
+   <form action="api/new.php" method="POST">
+     
+     <input type ="tel" name="mobile" placeholder="Mobile No." id="mob"  required ><br><br>
+     <input type ="password" name = "password" placeholder="Type your password" id="t" maxlength="12"><br><br>
+     <select class ="voter" id="i" name="role" >
+         <option value ="1">Voter</option>
+         <option value ="2">Group</option>
+     </select>
+     <br><br>
+     <input type="submit" value="Login" id="h"> <br><br>
+      <p>New user ?<a href="register.html" >Register</a></p>
+    
+   </form>
+</div> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    </body>
+</html>
